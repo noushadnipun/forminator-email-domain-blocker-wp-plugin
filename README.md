@@ -232,6 +232,12 @@ unwanted-domain.com
 
 ## Changelog
 
+### Version 1.1.2
+
+- **Enhanced Error Messages** – Error messages now dynamically display the blocked domain name (e.g., "Invalid Email address, emails from the domain 'live.com' are not allowed.")
+- **Improved Global Message** – Global form error message now retrieves and displays the specific blocked domain using transients
+- **Better User Feedback** – Users now see exactly which domain is blocked, making it clearer what went wrong
+
 ### Version 1.1.1
 
 - Enhanced domain validation with improved regex patterns
