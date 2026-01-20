@@ -163,7 +163,9 @@ class FEDB_Plugin {
                 $domain = strtolower( substr( strrchr( $email, '@' ), 1 ) );
 
                 if ( in_array( $domain, $blocked, true ) ) {
-                    $submit_errors[ self::FIELD_NAME ] = __( 'This email domain is not allowed.', self::TEXT_DOMAIN );
+                    // Store the blocked domain for use in global message
+                    set_transient( 'fedb_blocked_domain', $domain, HOUR_IN_SECONDS );
+                    $submit_errors[ self::FIELD_NAME ] = sprintf( __( 'Invalid Email address, emails from the domain "%s" are not allowed.', self::TEXT_DOMAIN ), esc_html( $domain ) );
                 }
             }
         }
@@ -181,8 +183,16 @@ new FEDB_Plugin();
 add_filter( 'forminator_custom_form_invalid_form_message', 'fedb_custom_invalid_message', 10, 2 );
 
 function fedb_custom_invalid_message( $message, $form_id ) {
-    // Custom global error message
-    return __( 'Submission blocked: Email domain is not allowed.', 'forminator-email-domain-blocker' );
+    // Retrieve the blocked domain from transient
+    $blocked_domain = get_transient( 'fedb_blocked_domain' );
+    
+    if ( $blocked_domain ) {
+        delete_transient( 'fedb_blocked_domain' );
+        return sprintf( __( 'Invalid Email address, emails from the domain "%s" are not allowed.', 'forminator-email-domain-blocker' ), esc_html( $blocked_domain ) );
+    }
+    
+    // Fallback message if domain not found
+    return __( 'Submission blocked: The email domain you entered is not allowed.', 'forminator-email-domain-blocker' );
 }
 
 
