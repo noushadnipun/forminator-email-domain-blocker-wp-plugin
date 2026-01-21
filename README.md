@@ -10,7 +10,7 @@ Forminator Email Domain Blocker is a lightweight, efficient plugin designed to e
 
 ## Features
 
-✨ **Key Features:**
+**Key Features:**
 
 - **Easy Domain Management** – Add or remove blocked email domains from a user-friendly admin interface
 - **Multiple Domain Support** – Block unlimited email domains with a simple list format (one domain per line)
@@ -255,17 +255,12 @@ unwanted-domain.com
 
 ---
 
-## Development & Support
+## Support & Maintenance
 
-### Developer Information
-
-**Author:** Noushad Nipun
-
-**Links:**
-
-- 🌐 **Website:** [noushadnipun.com](https://noushadnipun.com)
-- 💻 **GitHub:** [github.com/noushadnipun](https://github.com/noushadnipun)
-- 📧 **Email:** [hello@noushadnipun.com](mailto:hello@noushadnipun.com)
+**Developer:** Noushad Nipun
+**Website:** [noushadnipun.com](https://noushadnipun.com)
+**GitHub:** [github.com/noushadnipun](https://github.com/noushadnipun)
+**Email:** [hello@noushadnipun.com](mailto:hello@noushadnipun.com)
 
 ### Contributing
 
@@ -299,16 +294,6 @@ Found a bug or have a feature request? Please:
 This plugin is licensed under the **GNU General Public License v2.0 or later** (GPL-2.0-or-later).
 
 You are free to use, modify, and distribute this plugin in accordance with the terms of the GPL-2.0-or-later license.
-
----
-
-## Support & Maintenance
-
-This plugin is actively maintained. For updates, issues, or questions:
-
-- 📧 Email: [hello@noushadnipun.com](mailto:hello@noushadnipun.com)
-- 🌐 Website: [noushadnipun.com](https://noushadnipun.com)
-- 💬 GitHub: [github.com/noushadnipun](https://github.com/noushadnipun)
 
 ---
 
