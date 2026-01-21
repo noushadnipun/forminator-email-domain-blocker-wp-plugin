@@ -257,10 +257,10 @@ unwanted-domain.com
 
 ## Support & Maintenance
 
-**Developer:** Noushad Nipun
-**Website:** [noushadnipun.com](https://noushadnipun.com)
-**GitHub:** [github.com/noushadnipun](https://github.com/noushadnipun)
-**Email:** [hello@noushadnipun.com](mailto:hello@noushadnipun.com)
+- **Developer:** Noushad Nipun
+- **Website:** [noushadnipun.com](https://noushadnipun.com)
+- **GitHub:** [github.com/noushadnipun](https://github.com/noushadnipun)
+- **Email:** [hello@noushadnipun.com](mailto:hello@noushadnipun.com)
 
 ### Contributing
 
